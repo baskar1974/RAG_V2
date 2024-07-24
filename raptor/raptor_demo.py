@@ -99,7 +99,7 @@ for file in os.listdir(pdf_folder_path):
     
 RA.add_documents(str(documents))
 
-question = "What did virat kholi do in 2013?"
+question = "How to setup KVM server?"
 
 answer = RA.answer_question(question=question)
 
