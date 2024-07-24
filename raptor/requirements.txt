@@ -13,6 +13,6 @@ langchain_community==0.2.9
 pypdf2==3.0.1
 accelerate==0.33.0
 pypdf
-bitsandbytes-0.43.1
+bitsandbytes==0.43.1
 
 
