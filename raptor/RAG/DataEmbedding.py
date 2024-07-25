@@ -7,7 +7,7 @@ import PyPDF2
 import torch
 
 def load_chunk_persist_pdf():
-    pdf_folder_path = "demo/calix_pdf"
+    pdf_folder_path = "demo/calix_pdf/ragdataset"
     documents = []
     for file in os.listdir(pdf_folder_path):
         if file.endswith('.pdf'):
