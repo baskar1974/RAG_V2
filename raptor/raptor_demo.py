@@ -7,6 +7,8 @@ from langchain_community.document_loaders import PyPDFLoader
 import os
 import torch
 
+torch.cuda.empty_cache()
+
 # You can define your own Summarization model by extending the base Summarization Class. 
 class SummarizationModel(BaseSummarizationModel):
     def __init__(self, model_name="meta-llama/Meta-Llama-3-8B-Instruct"):
