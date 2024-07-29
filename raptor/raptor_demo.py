@@ -9,7 +9,7 @@ import torch
 
 # You can define your own Summarization model by extending the base Summarization Class. 
 class SummarizationModel(BaseSummarizationModel):
-    def __init__(self, model_name="meta-llama/Meta-Llama-3-8B-Instruct"):
+    def __init__(self, model_name="intfloat/e5-base-v2"):
         # Initialize the tokenizer and the pipeline for the GEMMA model
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.summarization_pipeline = pipeline(
