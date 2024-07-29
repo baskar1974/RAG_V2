@@ -98,12 +98,9 @@ for file in os.listdir(pdf_folder_path):
         pdf_path = os.path.join(pdf_folder_path, file)
         loader = PyPDFLoader(pdf_path)
         documents.extend(loader.load())
-with open('/home/bmuthiah/LLM/RAG_V2/raptor/demo/sample.txt', 'w') as file:
-    file.write(str(documents))
-with open("/home/bmuthiah/LLM/RAG_V2/raptor/demo/sample.txt", "r") as file:
-    text = file.read()
+cleaned_doc = [x for x in documents if x != 'NaN']
 
-RA.add_documents(str(documents))
+RA.add_documents(str(cleaned_doc))
 
 question = "Summary of high level BSP calix?"
 
