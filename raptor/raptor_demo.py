@@ -85,11 +85,6 @@ RAC = RetrievalAugmentationConfig(summarization_model=SummarizationModel(), qa_m
 
 RA = RetrievalAugmentation(config=RAC)
 
-
-    
-
-
-
 pdf_folder_path = "/home/bmuthiah/LLM/RAG_V2/raptor/demo/calix_pdf/ragdataset"
 documents = []
 for file in os.listdir(pdf_folder_path):
@@ -98,8 +93,6 @@ for file in os.listdir(pdf_folder_path):
         loader = PyPDFLoader(pdf_path)
         documents.extend(loader.load())
 cleaned_doc = [x for x in documents if x != 'NaN']
-with open('demo/sample.txt', 'r') as file:
-    text = file.read()
 
 RA.add_documents(str(cleaned_doc))
 
