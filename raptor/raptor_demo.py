@@ -92,9 +92,8 @@ for file in os.listdir(pdf_folder_path):
         pdf_path = os.path.join(pdf_folder_path, file)
         loader = PyPDFLoader(pdf_path)
         documents.extend(loader.load())
-cleaned_doc = [x for x in documents if x != 'NaN']
 
-RA.add_documents(str(cleaned_doc))
+RA.add_documents(str(documents))
 
 question = "Summary of high level BSP calix?"
 
