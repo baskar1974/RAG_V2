@@ -88,7 +88,7 @@ RA = RetrievalAugmentation(config=RAC)
 """with open('demo/sample.txt', 'r') as file:
     text = file.read()"""
 
-pdf_folder_path = "demo/calix_pdf"
+pdf_folder_path = "/home/bmuthiah/LLM/RAG_V2/raptor/demo/calix_pdf/ragdataset"
 documents = []
 for file in os.listdir(pdf_folder_path):
     if file.endswith('.pdf'):
