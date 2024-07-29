@@ -103,7 +103,7 @@ with open('/home/bmuthiah/LLM/RAG_V2/raptor/demo/sample.txt', 'w') as file:
 with open("/home/bmuthiah/LLM/RAG_V2/raptor/demo/sample.txt", "r") as file:
     text = file.read()
 
-RA.add_documents(text)
+RA.add_documents(str(documents))
 
 question = "Summary of high level BSP calix?"
 
