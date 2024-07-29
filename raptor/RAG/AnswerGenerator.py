@@ -4,7 +4,7 @@ import torch
 import json
 from DataEmbedding import load_chunk_persist_pdf
 
-READER_MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
+READER_MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct" 
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
