@@ -93,7 +93,7 @@ for file in os.listdir(pdf_folder_path):
         loader = PyPDFLoader(pdf_path)
         documents.extend(loader.load())
 
-RA.add_documents(str(documents))
+RA.add_documents(str(documents[:1000]))
 
 question = "Summary of high level BSP calix?"
 
