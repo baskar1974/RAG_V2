@@ -42,7 +42,7 @@ class SummarizationModel(BaseSummarizationModel):
         return summary
     
 class QAModel(BaseQAModel):
-    def __init__(self, model_name= "meta-llama/Meta-Llama-3-8B-Instruct"):
+    def __init__(self, model_name= "intfloat/e5-base-v2"):
         # Initialize the tokenizer and the pipeline for the model
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.qa_pipeline = pipeline(
