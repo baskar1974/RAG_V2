@@ -16,7 +16,7 @@ class SummarizationModel(BaseSummarizationModel):
             "text-generation",
             model=model_name,
             model_kwargs={"torch_dtype": torch.bfloat16},
-            device = torch.device("cuda:1,3" if torch.cuda.is_available() else "cpu"),  # Use "cpu" if CUDA is not available
+            device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu"),  # Use "cpu" if CUDA is not available
         )
 
     def summarize(self, context, max_tokens=150):
@@ -49,7 +49,7 @@ class QAModel(BaseQAModel):
             "text-generation",
             model=model_name,
             model_kwargs={"torch_dtype": torch.bfloat16},
-            device = torch.device("cuda:1,3" if torch.cuda.is_available() else "cpu"),
+            device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu"),
         )
 
     def answer_question(self, context, question):
