@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import tiktoken
 from bs4 import BeautifulSoup as Soup
 from langchain_community.document_loaders.recursive_url_loader import RecursiveUrlLoader
