@@ -48,7 +48,7 @@ docs_sq = loader.load()
 # Doc texts
 docs.extend([*docs_pydantic, *docs_sq])"""
 
-pdf_folder_path = "demo/calix_pdf"
+pdf_folder_path = "/home/bmuthiah/LLM/RAG_V2/raptor/demo/calix_pdf/ragdataset"
 docs = []
 for file in os.listdir(pdf_folder_path):
   if file.endswith('.pdf'):
