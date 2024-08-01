@@ -15,6 +15,7 @@ from sklearn.mixture import GaussianMixture
 from langchain_chroma import Chroma
 from langchain import hub
 from langchain_core.runnables import RunnablePassthrough
+from langchain_community.document_loaders import PyPDFLoader
 
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
