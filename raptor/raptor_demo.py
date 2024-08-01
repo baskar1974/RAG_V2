@@ -471,4 +471,4 @@ rag_chain = (
 )
 
 # Question
-rag_chain.invoke("How to define a RAG chain? Give me a specific code example.")
+print(rag_chain.invoke("How to define a RAG chain? Give me a specific code example."))
