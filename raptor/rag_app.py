@@ -1,4 +1,4 @@
 import gradio as gr
-from RAG import AnswerGenerator
+from RAG.AnswerGenerator import answer_generator
 
 gr.ChatInterface(answer_generator).launch(share=True)
