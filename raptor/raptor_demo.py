@@ -471,4 +471,5 @@ rag_chain = (
 )
 
 # Question
-print(rag_chain.invoke("How to define a RAG chain? Give me a specific code example."))
+def answer_generator(question, history):
+    return rag_chain.invoke(question)
