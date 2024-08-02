@@ -2,7 +2,7 @@ from transformers import pipeline, AutoModelForCausalLM, BitsAndBytesConfig, Aut
 import accelerate
 import torch
 import json
-from DataEmbedding import load_chunk_persist_pdf
+from RAG.DataEmbedding import load_chunk_persist_pdf
 
 READER_MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct" 
 
